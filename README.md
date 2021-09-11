@@ -6,7 +6,7 @@
 conda create --name jukebox python=3.7.5
 conda activate jukebox
 pip install mpi4py==3.0.3
-conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c conda-forge
+conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c conda-forge #Cuda 11.1 for RTX 30s
 git clone https://github.com/nbinobied/jukebox.git
 cd jukebox
 pip install -r requirements.txt
