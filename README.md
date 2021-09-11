@@ -1,5 +1,24 @@
 **Status:** Archive (code is provided as-is, no updates expected)
 
+# Forked
+```
+# Required: Sampling
+conda create --name jukebox python=3.7.5
+conda activate jukebox
+pip install mpi4py==3.0.3
+conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c conda-forge
+git clone https://github.com/nbinobied/jukebox.git
+cd jukebox
+pip install -r requirements.txt
+pip install -e .
+
+# Required: Training
+conda install av=7.0.01 -c conda-forge 
+pip install ./tensorboardX
+```
+
+
+
 # Jukebox
 Code for "Jukebox: A Generative Model for Music"
 
